@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Dashboard 🎂</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body class="admin">
+
+<h1>Admin Dashboard 🎂🎉</h1>
+<!--ANALYTICS CARRD-->
+<div class="card">
+    <h2>Analytics</h2>
+    <p><b>Total Wishes:</b>{{total_wishes}}</p>
+</div>
+<br>
+<h2>All Wishes</h2>
+
+{% for wish in wishes %}
+    <div class="card">
+        <b>{{ wish[1] }}</b><br>
+        {{ wish[2] }}
+        <br><br>
+        <a href="/delete/{{ wish[0] }}"
+        onclick="return confirm('Delete the wish?')">Delete</a>
+    </div>
+{% endfor %}
+<br>
+<a href="/logout">LOGOUT</a>
+</body>
+</html>

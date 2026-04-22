@@ -1,0 +1,67 @@
+.body {
+    font-family: 'Times New Roman';
+    margin: 0;
+    background: linear-gradient(to rigth, #ff9a9e, #fad0c4);
+
+    text-align: center;
+}
+
+/* HEADER */
+header {
+    padding: 20px;
+}
+
+header h1 {
+    color:black;
+    align-self: center;
+    margin-bottom: 5px;
+}
+
+/* MAIN CARD */
+.card {
+    background: grey;
+    width: fit-content;
+    margin: auto;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+/* FORM */
+input, textarea {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+textarea {
+    height: 100px;
+    color:red;
+    background:white;
+    resize: none;
+    font-size: 20px;
+}
+
+button {
+    background: green;
+    color: purple;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+button:hover {
+    background: #e60073;
+}
+
+/* FOOTER */
+footer {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #555;
+}
